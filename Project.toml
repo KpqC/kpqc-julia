@@ -1,6 +1,6 @@
 name = "KpqC"
 uuid = "45a0656f-097c-4f7c-a983-00b6d77854d4"
-authors = ["O. Suolfou"]
+authors = ["osuolfou"]
 version = "0.1.0"
 
 [deps]

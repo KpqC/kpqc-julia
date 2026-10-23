@@ -22,10 +22,9 @@
 
 #if defined(KPQC_TEST_ENTROPY)
 /*
- * This override is compiled only for kpqc_kat builds and is exposed through
- * internal/native. It lets the KAT tests reproduce the NIST CTR-DRBG stream
- * without changing the public API or the operating-system entropy used in
- * normal builds.
+ * This override is compiled only for deterministic KAT builds. It lets the
+ * tests reproduce the NIST CTR-DRBG stream without changing the public API or
+ * the operating-system entropy used in normal builds.
  */
 static uint8_t *kpqc_test_entropy = NULL;
 static size_t kpqc_test_entropy_length = 0;

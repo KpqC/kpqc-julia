@@ -16,8 +16,14 @@ does not download native libraries during compilation.
 
 ## Install
 
-Until the package is registered, clone the repository and use the Julia package
-manager from its root:
+Install the registered package with Julia's package manager:
+
+```julia
+pkg> add KpqC
+```
+
+To work from a source checkout, use the package manager from the repository
+root:
 
 ```julia
 pkg> develop .

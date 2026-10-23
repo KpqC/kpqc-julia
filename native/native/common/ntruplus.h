@@ -1,6 +1,6 @@
 #include "pqc_fips202.h"
 
-/* The R DLL exposes only R_init_kpqc; NTRU+ entry points stay internal. */
+/* Rename the NTRU+ entry points through KPQC_SYMBOL below. */
 #define NTRUPLUS_ABI_H
 #define NTRUPLUS_INTERNAL
 #define NTRUPLUS_EXTERNAL
