@@ -11,8 +11,8 @@ const CONTEXT = Vector{UInt8}(codeunits("kpqc-julia"))
     @test algorithm_id(NTRUPlus768) == "NTRU+768"
     @test signature_sizes(HAETAE5) == SignatureSizes(2080, 2752, 2948)
     @test kem_sizes(TiMER) == KEMSizes(672, 832, 608, 32)
-    @test Base.Docs.doc(generate_keypair) !== nothing
-    @test Base.Docs.doc(encapsulate) !== nothing
+    @test (@doc generate_keypair) !== nothing
+    @test (@doc encapsulate) !== nothing
 
     output_error = KpqCOutputSizeError(:sign, 64, 63)
     @test sprint(showerror, output_error) ==
